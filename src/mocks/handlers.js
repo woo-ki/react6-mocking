@@ -1,6 +1,15 @@
 import { rest } from "msw";
 
 export const handlers = [
+    rest.put("/counter/increment", async (req, res, ctx) => {
+        const {value} = req.body;
+        console.log(req.json(), req.body);
+        return res(
+            ctx.json({
+                value: value + 2
+            })
+        )
+    }),
     rest.get("/login", async (req, res, ctx) => {
         return res(
             ctx.json({
