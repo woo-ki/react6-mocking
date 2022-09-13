@@ -1,6 +1,15 @@
 import { rest } from "msw";
 
 export const handlers = [
+    rest.get("/todo", async (req, res, ctx) => {
+        return res(
+            ctx.json({
+                todo: {
+                    task: "Todo from Server"
+                }
+            })
+        )
+    }),
     rest.put("/counter/increment", async (req, res, ctx) => {
         const {value} = req.body;
         console.log(req.json(), req.body);
