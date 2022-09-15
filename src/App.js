@@ -7,12 +7,15 @@
 // import TodoList from "./components/TodoList";
 // import {observableTodoStore} from "./app/ObservableTodoStore";
 
-import {RecoilRoot} from "recoil";
-import FontButton from "./components/RecoilExample/FontButton";
-import Text from "./components/RecoilExample/Text";
-import CharacterCounter from "./components/RecoilExample/CharacterCounter";
-import TodoList from "./components/RecoilExample/Todo/TodoList";
-import CurrentUserInfo from "./components/RecoilExample/CurrentUserInfo";
+// import {RecoilRoot} from "recoil";
+// import FontButton from "./components/RecoilExample/FontButton";
+// import Text from "./components/RecoilExample/Text";
+// import CharacterCounter from "./components/RecoilExample/CharacterCounter";
+// import TodoList from "./components/RecoilExample/Todo/TodoList";
+// import CurrentUserInfo from "./components/RecoilExample/CurrentUserInfo";
+
+import Text from "./components/ZustandExample/Text";
+import CharacterCounter from "./components/ZustandExample/CharacterCounter";
 
 function App() {
     return (
@@ -23,15 +26,17 @@ function App() {
             {/*<Counter2/>*/}
             {/*<MobxExample/>*/}
             {/*<TodoList store={observableTodoStore}/>*/}
-            <RecoilRoot>
-                <CurrentUserInfo/>
-                <br/>
-                <TodoList/>
-                <br/>
-                <CharacterCounter/>
-                <FontButton/>
-                <Text/>
-            </RecoilRoot>
+            {/*<RecoilRoot>*/}
+            {/*    <CurrentUserInfo/>*/}
+            {/*    <br/>*/}
+            {/*    <TodoList/>*/}
+            {/*    <br/>*/}
+            {/*    <CharacterCounter/>*/}
+            {/*    <FontButton/>*/}
+            {/*    <Text/>*/}
+            {/*</RecoilRoot>*/}
+            <Text/>
+            <CharacterCounter/>
         </div>
     );
 }
