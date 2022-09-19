@@ -16,6 +16,9 @@
 
 import Text from "./components/ZustandExample/Text";
 import CharacterCounter from "./components/ZustandExample/CharacterCounter";
+import TodoList from "./components/ZustandExample/Todo/TodoList";
+import CurrentUserInfo from "./components/ZustandExample/CurrentUserInfo";
+import Scratches from "./components/ZustandExample/Scratches";
 
 function App() {
     return (
@@ -37,6 +40,9 @@ function App() {
             {/*</RecoilRoot>*/}
             <Text/>
             <CharacterCounter/>
+            <TodoList/>
+            <CurrentUserInfo/>
+            <Scratches/>
         </div>
     );
 }
